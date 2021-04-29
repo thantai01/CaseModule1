@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body onload="gameRunning()">
+
+<!--<input type="button" value="Change Car" onclick="carChoice()"/>-->
+<!--<button onclick="gameRunning()">Start</button>-->
+
+<label><input type="text" id="score"  value="Your Score :" disabled></label>
+<canvas id="myCanvas" width="900" height="900" style="border: 2px solid #d3d3d3"></canvas>
+
+
+<div>
+    <table>
+        <tr><th colspan="2">Highest Score</th></tr>
+        <tr>
+            <th> Player Name</th>
+            <th> Score </th>
+        </tr>
+        <tr>
+            <td id="n1"></td>
+            <td id="sc1"></td>
+        </tr>
+        <tr>
+            <td id="n2"></td>
+            <td id="sc2"></td>
+        </tr>
+        <tr>
+            <td id="n3"></td>
+            <td id="sc3"></td>
+        </tr>
+        <tr>
+            <td id="n4"></td>
+            <td id="sc4"></td>
+        </tr>
+        <tr>
+            <td id="n5"></td>
+            <td id="sc5"></td>
+        </tr>
+    </table>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/background.js"></script>
+<script src="js/player.js"></script>
+<script src="js/object.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    div {
+        float: left;
+    }
+    div table {
+        border: 1px solid #d3d3d3;
+        border-collapse: collapse;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    div table th {
+        border: 1px solid #d3d3d3;
+
+        text-align: center;
+    }
+    div table:nth-child(odd) {
+        background-color: aquamarine;
+    }
+    input {
+        float: left;
+        font-family: sans-serif;
+        font-size: large;
+        background-color: aquamarine;
+    }
+
+</style>
+
+</html>
