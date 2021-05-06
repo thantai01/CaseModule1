@@ -35,24 +35,27 @@ let sel = 0;
 function carChoice() {
     switch (sel%4) {
         case 0:
+            document.getElementById('carshow').style.background = "url('./img/Main_img/main1.png')"
             main.drawCar(ctx);
             break;
         case 1:
             main.image = './img/Main_img/main2.png';
             main.drawCar(ctx);
+            // document.getElementById('choose').value = './img/Main_img/main2.png'
             break;
         case 2:
             main.image = './img/Main_img/main3.png';
             main.drawCar(ctx);
+            // document.getElementById('choose').value = './img/Main_img/main3.png'
             break;
         case 3:
             main.image = './img/Main_img/main4.png';
             main.drawCar(ctx);
+            // document.getElementById('choose').value = './img/Main_img/main4.png'
             break;
     }
     sel++;
 }
-
 
 
 

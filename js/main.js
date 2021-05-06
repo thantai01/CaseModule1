@@ -7,8 +7,7 @@ function gameRunning() {
     difficultChange();
     crashCheck();
 }
-// setInterval(gameRunning,30);
-
+setInterval(gameRunning,30);
 
 
 let score = 0;
